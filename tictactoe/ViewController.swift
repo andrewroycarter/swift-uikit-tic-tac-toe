@@ -112,16 +112,23 @@ class ViewController: UIViewController {
             }
         }
 
-        // Diagonal win check
-        let diagonalWin = [gameState[0], gameState[4], gameState[8]]
-        guard let value = diagonalWin.first,
-              let claimingPlayer = value else {
-                  return nil
-              }
+        // Diagonal win checks
+        let diagonalWinLeft = [gameState[0], gameState[4], gameState[8]]
+        if let value = diagonalWinLeft.first,
+           let claimingPlayer = value {
+            let claimingPlayerWinsLeft = diagonalWinLeft.allSatisfy({ $0 == claimingPlayer })
+            guard !claimingPlayerWinsLeft else {
+                return claimingPlayer
+            }
+        }
         
-        let claimingPlayerWins = diagonalWin.allSatisfy({ $0 == claimingPlayer })
-        guard !claimingPlayerWins else {
-            return claimingPlayer
+        let diagonalWinRight = [gameState[2], gameState[4], gameState[6]]
+        if let value = diagonalWinRight.first,
+           let claimingPlayer = value  {
+            let claimingPlayerWinsRight = diagonalWinRight.allSatisfy({ $0 == claimingPlayer })
+            guard !claimingPlayerWinsRight else {
+                return claimingPlayer
+            }
         }
         
         return nil
