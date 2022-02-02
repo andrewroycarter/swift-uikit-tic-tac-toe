@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tictactoe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vqs-7w-7iY">
+                                <rect key="frame" x="10" y="54" width="394" height="798"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YcI-Bc-fny">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="202"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HvI-aX-CIQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="394" height="54.5"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="B1b-Kr-4r5">
+                                                <rect key="frame" x="0.0" y="62.5" width="394" height="20.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" text="Current Player" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3KT-ZC-fLO" userLabel="Current Player">
+                                                        <rect key="frame" x="0.0" y="0.0" width="118" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L9c-Wu-hQD">
+                                                        <rect key="frame" x="126" y="0.0" width="268" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="22e-PV-KFE">
+                                                <rect key="frame" x="0.0" y="91" width="394" height="20.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" text="X wins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6i-hC-v1k" userLabel="Current Player">
+                                                        <rect key="frame" x="0.0" y="0.0" width="54" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDu-3w-DvN">
+                                                        <rect key="frame" x="62" y="0.0" width="332" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ej9-0H-Spg">
+                                                <rect key="frame" x="0.0" y="119.5" width="394" height="20.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" text="O wins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xp5-Dx-vwu" userLabel="Current Player">
+                                                        <rect key="frame" x="0.0" y="0.0" width="55" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qL7-tB-1OT">
+                                                        <rect key="frame" x="63" y="0.0" width="331" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4sP-Fr-eBI">
+                                                <rect key="frame" x="0.0" y="148" width="394" height="54"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="4sP-Fr-eBI" firstAttribute="height" secondItem="HvI-aX-CIQ" secondAttribute="height" id="chX-dX-XHT"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hca-1z-VRX">
+                                        <rect key="frame" x="0.0" y="202" width="394" height="394"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QUs-3G-5K5">
+                                                <rect key="frame" x="0.0" y="0.0" width="394" height="124.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAK-Ap-M1a" customClass="TicTacButton" customModule="tictactoe" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="124.5" height="124.5"/>
+                                                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <action selector="ticTacButtonPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oQp-Xp-iiy"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYz-v1-RjP" customClass="TicTacButton" customModule="tictactoe" customModuleProvider="target">
+                                                        <rect key="frame" x="134.5" y="0.0" width="125" height="124.5"/>
+                                                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <action selector="ticTacButtonPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mbb-R8-jzq"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PHI-7W-6To" customClass="TicTacButton" customModule="tictactoe" customModuleProvider="target">
+                                                        <rect key="frame" x="269.5" y="0.0" width="124.5" height="124.5"/>
+                                                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <action selector="ticTacButtonPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="83W-Yg-smu"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pZ4-qG-nuk">
+                                                <rect key="frame" x="0.0" y="134.5" width="394" height="125"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="30e-uq-icR" customClass="TicTacButton" customModule="tictactoe" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="124.5" height="125"/>
+                                                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <action selector="ticTacButtonPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1aN-he-J0V"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gzk-iv-QOO" customClass="TicTacButton" customModule="tictactoe" customModuleProvider="target">
+                                                        <rect key="frame" x="134.5" y="0.0" width="125" height="125"/>
+                                                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <action selector="ticTacButtonPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nkq-1d-qUk"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5M-Fy-pEu" customClass="TicTacButton" customModule="tictactoe" customModuleProvider="target">
+                                                        <rect key="frame" x="269.5" y="0.0" width="124.5" height="125"/>
+                                                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <action selector="ticTacButtonPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r0j-9N-Aj6"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1cf-Vs-i2E">
+                                                <rect key="frame" x="0.0" y="269.5" width="394" height="124.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y3r-CK-7H3" customClass="TicTacButton" customModule="tictactoe" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="124.5" height="124.5"/>
+                                                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <action selector="ticTacButtonPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bp1-7z-TJO"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tJ4-yc-Jc1" customClass="TicTacButton" customModule="tictactoe" customModuleProvider="target">
+                                                        <rect key="frame" x="134.5" y="0.0" width="125" height="124.5"/>
+                                                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <action selector="ticTacButtonPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JQT-2g-58x"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awy-V1-q5Y" customClass="TicTacButton" customModule="tictactoe" customModuleProvider="target">
+                                                        <rect key="frame" x="269.5" y="0.0" width="124.5" height="124.5"/>
+                                                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <action selector="ticTacButtonPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y4f-nI-K2E"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" secondItem="hca-1z-VRX" secondAttribute="width" multiplier="1:1" id="OXE-ak-Hkk"/>
+                                        </constraints>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ttb-Rl-kJT">
+                                        <rect key="frame" x="0.0" y="596" width="394" height="202"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hca-1z-VRX" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="L8l-05-khq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vqs-7w-7iY" secondAttribute="trailing" constant="10" id="MQc-vQ-3bc"/>
+                            <constraint firstItem="vqs-7w-7iY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="VrY-Fa-h06"/>
+                            <constraint firstItem="vqs-7w-7iY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="gRE-9I-czX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vqs-7w-7iY" secondAttribute="bottom" constant="10" id="yed-x8-zGC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="currentPlayerLabel" destination="L9c-Wu-hQD" id="upI-Rj-hlc"/>
+                        <outlet property="oWinsLabel" destination="qL7-tB-1OT" id="OH7-wg-tCx"/>
+                        <outlet property="xWinsLabel" destination="IDu-3w-DvN" id="UpL-Ie-20r"/>
+                        <outletCollection property="ticTacButtons" destination="DAK-Ap-M1a" collectionClass="NSMutableArray" id="FO9-lm-Med"/>
+                        <outletCollection property="ticTacButtons" destination="kYz-v1-RjP" collectionClass="NSMutableArray" id="Jc3-5x-ryI"/>
+                        <outletCollection property="ticTacButtons" destination="PHI-7W-6To" collectionClass="NSMutableArray" id="uvK-ue-Oa9"/>
+                        <outletCollection property="ticTacButtons" destination="30e-uq-icR" collectionClass="NSMutableArray" id="GVC-Eh-HEJ"/>
+                        <outletCollection property="ticTacButtons" destination="Gzk-iv-QOO" collectionClass="NSMutableArray" id="zvE-3p-cx7"/>
+                        <outletCollection property="ticTacButtons" destination="V5M-Fy-pEu" collectionClass="NSMutableArray" id="bxa-vE-ETn"/>
+                        <outletCollection property="ticTacButtons" destination="Y3r-CK-7H3" collectionClass="NSMutableArray" id="Lrj-Mo-VER"/>
+                        <outletCollection property="ticTacButtons" destination="tJ4-yc-Jc1" collectionClass="NSMutableArray" id="0XT-tX-JN1"/>
+                        <outletCollection property="ticTacButtons" destination="Awy-V1-q5Y" collectionClass="NSMutableArray" id="4Af-vP-ehn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="117"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
