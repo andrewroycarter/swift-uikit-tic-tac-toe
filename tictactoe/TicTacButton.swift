@@ -14,8 +14,6 @@ class TicTacButton: UIButton {
     
     static let placeholderPosition = -1
 
-    @IBInspectable var position: Int = TicTacButton.placeholderPosition
-    
     private (set) var claimingPlayer: Player?
     
     // MARK: - Instance Methods
